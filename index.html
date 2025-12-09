@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JeevaFlow — Smart Water Testing</title>
+  <meta name="description" content="Early Detection of Water-Borne Diseases Starts With Clean Water" />
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+  <!-- Chart.js for demo graphs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="spinner"></div>
+    <div class="preloader-text">JeevaFlow</div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">JeevaFlow</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#solution">Solution</a>
+        <a href="#how-app">App</a>
+        <a href="#device">Device</a>
+        <a href="#demo">Live Demo</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme"><i class="fa fa-moon"></i></button>
+        <button class="cta" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">View Device</button>
+        <button class="cta ghost">Download App</button>
+        <button class="mobile-menu" id="mobileMenuBtn"><i class="fa fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1 class="hero-title">Early Detection of Water-Borne Diseases Starts With Clean Water</h1>
+        <p class="hero-lead">Real-time sensing device + intelligent mobile app — detects threats early, protects communities.</p>
+        <div class="hero-ctas">
+          <button class="cta large" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">View Device</button>
+          <button class="cta large ghost">Download App</button>
+        </div>
+        <div class="hero-highlights">
+          <div class="pill"><i class="fa fa-bolt"></i> Rapid detection</div>
+          <div class="pill"><i class="fa fa-leaf"></i> Low-power & portable</div>
+          <div class="pill"><i class="fa fa-building"></i> NGO & Govt ready</div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="device-card glass">
+          <div class="device-screen">
+            <!-- Illustration / placeholder -->
+            <img src="1.png" alt="device mockup" />
+          </div>
+          <div class="device-footer">SmartWater Device • Real-time analysis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Problem -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About the Problem</h2>
+      <p class="section-sub">Water-borne diseases continue to impact millions globally. Key diseases include:</p>
+      <div class="cards-row">
+        <div class="card glass">
+          <h3>Cholera</h3>
+          <p>Acute diarrhoeal illness — can be fatal without treatment.</p>
+        </div>
+        <div class="card glass">
+          <h3>Typhoid</h3>
+          <p>Serious bacterial infection spread through contaminated water.</p>
+        </div>
+        <div class="card glass">
+          <h3>Dysentery</h3>
+          <p>Inflammation of intestines causing severe diarrhoea.</p>
+        </div>
+        <div class="card glass">
+          <h3>Hepatitis A</h3>
+          <p>Viral infection transmitted by ingestion of contaminated food/water.</p>
+        </div>
+        <div class="card glass">
+          <h3>Diarrhoea</h3>
+          <p>Major cause of child mortality linked to poor water quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Solution -->
+  <section id="solution" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Our Solution</h2>
+      <p class="section-sub">A compact device paired with an intelligent app analyses water and predicts disease risk.</p>
+      <div class="solution-grid">
+        <div class="glass card">
+          <h3>Advanced Sensors</h3>
+          <ul class="sensor-list">
+            <li><strong>pH Sensor</strong> — Detects acidity/alkalinity that affects microbial growth.</li>
+            <li><strong>Turbidity Sensor</strong> — Measures water clarity, linked to contamination.</li>
+            <li><strong>TDS Sensor</strong> — Total dissolved solids informing water quality.</li>
+            <li><strong>Bacteria Indicators</strong> — Proxy sensors for microbial load.</li>
+          </ul>
+        </div>
+        <div class="glass card">
+          <h3>AI & Mobile App</h3>
+          <p>Our app uses machine learning models to combine sensor streams and contextual data to estimate early disease risk levels and push alerts to users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How the App Works -->
+  <section id="how-app" class="section">
+    <div class="container">
+      <h2 class="section-title">How the App Works</h2>
+      <div class="app-grid">
+        <ul class="features-list">
+          <li>✅ Real-time water quality data</li>
+          <li>✅ Disease risk alerts</li>
+          <li>✅ Safe / Unsafe water status</li>
+          <li>✅ Nearby safe water sources</li>
+          <li>✅ Health recommendations</li>
+          <li>✅ History & reports</li>
+        </ul>
+        <div class="phone-mock glass">
+          <img src="2.png" alt="phone mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How the Device Works -->
+  <section id="device" class="section alt">
+    <div class="container">
+      <h2 class="section-title">How the Device Works</h2>
+      <div class="steps-row">
+        <div class="step card glass">
+          <div class="step-number">1</div>
+          <h4>Place the device in water</h4>
+          <p>Deploy at source — tap, well, tank or stream.</p>
+        </div>
+        <div class="step card glass">
+          <div class="step-number">2</div>
+          <h4>Sensors analyse the sample</h4>
+          <p>Sensors record pH, turbidity, TDS and bacterial indicators.</p>
+        </div>
+        <div class="step card glass">
+          <div class="step-number">3</div>
+          <h4>Data is sent to the app</h4>
+          <p>Low-energy wireless updates stream to the paired phone.</p>
+        </div>
+        <div class="step card glass">
+          <div class="step-number">4</div>
+          <h4>Results appear on the dashboard</h4>
+          <p>Risk estimates, historical graphs & recommendations are shown.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <div class="features-grid">
+        <div class="feature card animated glass">
+          <i class="fa fa-stopwatch fa-2x"></i>
+          <h4>Rapid detection</h4>
+        </div>
+        <div class="feature card animated glass">
+          <i class="fa fa-wifi fa-2x"></i>
+          <h4>Portable & low power</h4>
+        </div>
+        <div class="feature card animated glass">
+          <i class="fa fa-tree fa-2x"></i>
+          <h4>Works in rural & urban areas</h4>
+        </div>
+        <div class="feature card animated glass">
+          <i class="fa fa-sun fa-2x"></i>
+          <h4>Solar-powered option</h4>
+        </div>
+        <div class="feature card animated glass">
+          <i class="fa fa-hands-helping fa-2x"></i>
+          <h4>NGO & Government ready</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact & Use Cases -->
+  <section id="impact" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Impact & Use Cases</h2>
+      <div class="grid-usecases">
+        <div class="usecase card glass">Villages & rural areas</div>
+        <div class="usecase card glass">Disaster / relief camps</div>
+        <div class="usecase card glass">Schools & hospitals</div>
+        <div class="usecase card glass">Smart cities</div>
+        <div class="usecase card glass">Remote locations</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Demo -->
+  <section id="demo" class="section">
+    <div class="container">
+      <h2 class="section-title">Live Demo (UI Only)</h2>
+      <div class="demo-grid">
+        <div class="card glass status-card">
+          <h4>Water Quality Status</h4>
+          <div class="status-row">
+            <div class="status-left">
+              <div class="status-value">pH: <strong id="demoPH">7.2</strong></div>
+              <div class="status-value">TDS: <strong id="demoTDS">120 ppm</strong></div>
+              <div class="status-value">Turbidity: <strong id="demoTURB">2 NTU</strong></div>
+            </div>
+            <div class="risk-meter">
+              <div id="riskIndicator" class="risk-indicator">
+                <div class="risk-dot"></div>
+              </div>
+              <div id="riskText" class="risk-text">🟢 Safe</div>
+            </div>
+          </div>
+        </div>
+        <div class="card glass chart-card">
+          <canvas id="waterChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Team</h2>
+      <p class="section-sub">Core team driving JeevaFlow</p>
+      <div class="team-grid">
+        <div class="person card glass">
+          <img src="img1.JPG" alt="Ashree Bharadwaj">
+          <h4>Ashree Bharadwaj</h4>
+          <p><strong>Key Skills:</strong> Embedded systems, IoT</p>
+          <p><strong>Current Role:</strong> Tech Lead</p>
+        </div>
+
+        <div class="person card glass">
+          <img src="img2.jpeg" alt="Blyth Dsouza">
+          <h4>Blyth Dsouza</h4>
+          <p><strong>Key Skills:</strong> App dev, UI/UX design</p>
+          <p><strong>Current Role:</strong> App Developer</p>
+        </div>
+
+        <div class="person card glass">
+          <img src="img3.png" alt="Sidhant Singh">
+          <h4>Sidhant Singh</h4>
+          <p><strong>Key Skills:</strong> Marketing & research</p>
+          <p><strong>Current Role:</strong> Biz & Marketing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team section removed as requested -->
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+      <div class="container contact-grid">
+      <div class="contact-form card glass">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="cta">Send Message</button>
+        </form>
+      </div>
+      <!-- 'Get in touch' contact info card removed as requested -->
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+    <div>© <span id="year"></span> JeevaFlow. All rights reserved.</div>
+      <div>Built for impact • Water Intelligence</div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" title="Back to top"><i class="fa fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
